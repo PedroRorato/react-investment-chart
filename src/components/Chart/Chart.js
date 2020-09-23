@@ -1,27 +1,15 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 
-export default function Chart() {
+export default function Chart(props) {
 
     const data = {
-        labels: [2020,2021,2022],
+        labels: [...props.time],
         datasets: [
             { 
-                data: [86,114,106],
-                label: "Africa",
+                data: [...props.data],
+                label: "",
                 borderColor: "blue",
-                fill: false
-            },
-            { 
-                data: [282,350,411],
-                label: "Asia",
-                borderColor: "red",
-                fill: false
-            },
-            { 
-                data: [168,170,178],
-                label: "Europe",
-                borderColor: "green",
                 fill: false
             }
         ],
