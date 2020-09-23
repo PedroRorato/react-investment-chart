@@ -12,7 +12,6 @@ function App() {
   const [meses, setMeses] = useState([]);
 
   const calcular = (event) => {
-    event.preventDefault();
     
     const form = document.querySelector('form');
     let inicial = Number(form.inicial.value);
@@ -33,8 +32,8 @@ function App() {
 
     const total = document.getElementById('total');
     const volume = document.getElementById('volume');
-    total.innerHTML = Math.round(inicial);
-    volume.innerHTML = mensal * meses;
+    total.innerHTML = Math.round(inicial).toLocaleString();
+    volume.innerHTML = (mensal * meses).toLocaleString();
   }
 
   return (
@@ -57,7 +56,7 @@ function App() {
               <label>Taxa</label>
               <input type="text" name="taxa" defaultValue="1.005" placeholder="taxa" />
             </div>
-            <button>Calcular</button>
+            <button>Add</button>
           </form>
           <div>
             <h2>Total: <span id="total"></span></h2>

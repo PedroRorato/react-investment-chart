@@ -25,6 +25,6 @@ input {
 
 form {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 50px;
   column-gap: .5rem;
 }
