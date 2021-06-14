@@ -29,6 +29,11 @@ form {
     font-size: 1rem;
 }
 
+.form-group input[type='color'] {
+    height: 38px;
+    width: 100%;
+}
+
 button{
     padding: .5rem;
     font-size: 1rem;
@@ -57,5 +62,12 @@ tr {
 }
 
 th, td {
-    padding: .5rem .75rem;    
+    padding: .75rem;    
+}
+
+
+.chart-container {
+    max-width: 90%;
+    margin: 1rem auto 0;
+    height: 300px;
 }

@@ -6,7 +6,9 @@ function TableRow(props) {
 
     return (
         <tr>
-            <td>R$ {props.investimento}</td>
+            <td style={{backgroundColor: props.cor}}></td>
+            <td>R$ {props.inicial}</td>
+            <td>R$ {props.deposito}</td>
             <td>{props.rendimento}%</td>
             <td>{props.meses}</td>
             <td>R$ {props.total}</td>
