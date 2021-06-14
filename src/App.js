@@ -38,32 +38,7 @@ function App() {
 
   return (
     <Container>
-        <Card>
-          <form onSubmit={calcular}>
-            <div className="form-group">
-                <label>Inicial</label>
-                <input type="text" name="inicial" defaultValue="0" placeholder="inicial" />
-            </div>
-            <div className="form-group">
-              <label>Mensal</label>
-              <input type="text" name="mensal" defaultValue="100" placeholder="mensal" />
-            </div>
-            <div className="form-group">
-              <label>Meses</label>
-              <input type="text" name="meses" defaultValue="3" placeholder="meses" />
-            </div>
-            <div className="form-group">
-              <label>Taxa</label>
-              <input type="text" name="taxa" defaultValue="1.005" placeholder="taxa" />
-            </div>
-            <button>Add</button>
-          </form>
-          <div>
-            <h2>Total: <span id="total"></span></h2>
-            <h2>Volume Investido: <span id="volume"></span></h2>
-          </div>
-          <Chart data={dados} time={meses} />
-        </Card>
+        
     </Container>
   );
 }
