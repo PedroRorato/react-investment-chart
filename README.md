@@ -1,6 +1,6 @@
 # Simulador de Investimentos
 
-Projeto em construção Teste 1
+Projeto em construção...
 
 ## Códigos de terceiros
 
